@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MarksAdmin</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="pull-left brand">MARkS ADMIN</div>
+    <div class="pull-right user-email">
+      <% if user_signed_in? %> Logged in as <strong><%= current_user.email %></strong>
+          <%= link_to('Logout', destroy_user_session_path, :method => :delete) %>
+      <% end %>
+   </div>
+  </div>
+  </nav>
+  <p class="notice"><%= notice %></p>
+  <p class="alert"><%= alert %></p>
+
+
+<%= yield %>
+
+</body>
+</html>

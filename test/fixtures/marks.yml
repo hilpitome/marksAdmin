@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  course_code: MyString
+  admission_number: MyString
+  student_name: MyString
+  cat_one: MyString
+  integer: MyString
+  cat_two: MyString
+  integer: MyString
+  exam: 1
+
+two:
+  course_code: MyString
+  admission_number: MyString
+  student_name: MyString
+  cat_one: MyString
+  integer: MyString
+  cat_two: MyString
+  integer: MyString
+  exam: 1

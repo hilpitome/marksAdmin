@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Course code:</strong>
+  <%= @mark.course_id %>
+</p>
+
+<p>
+  <strong>Admission number:</strong>
+  <%= @mark.admission_number %>
+</p>
+
+<p>
+  <strong>Student name:</strong>
+  <%= @mark.student_name %>
+</p>
+
+<p>
+  <strong>Cat one:</strong>
+  <%= @mark.cat_one %>
+</p>
+
+<p>
+  <strong>Cat two:</strong>
+  <%= @mark.cat_two %>
+</p>
+
+<p>
+  <strong>Exam:</strong>
+  <%= @mark.exam %>
+</p>
+
+<%= link_to 'Edit', edit_mark_path(@mark) %> |
+<%= link_to 'Back', marks_path %>
