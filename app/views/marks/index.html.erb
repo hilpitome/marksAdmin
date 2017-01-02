@@ -12,6 +12,7 @@
         <th>Cat one</th>
         <th>Cat two</th>
         <th>Exam</th>
+        <th>Total Mark</th>
         <th colspan="3"></th>
       </tr>
     </thead>
@@ -26,6 +27,7 @@
           <td><%= mark.cat_one %></td>
           <td><%= mark.cat_two %></td>
           <td><%= mark.exam %></td>
+          <td><%= print_total(mark.cat_one, mark.cat_two, mark.exam)%></td>
           <td><%= link_to 'Show', mark %></td>
           <td><%= link_to 'Edit', edit_mark_path(mark) %></td>
           <td><%= link_to 'Destroy', mark, method: :delete, data: { confirm: 'Are you sure?' } %></td>

@@ -7,20 +7,21 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <p class="notice"><%= notice %></p>
+  <p class="alert"><%= alert %></p>
   <nav class="navbar navbar-default navbar-fixed-top">
-  <div class="container">
+  <div class="container-fluid">
     <div class="pull-left brand">MARkS ADMIN</div>
     <div class="pull-right user-email">
       <% if user_signed_in? %> Logged in as <strong><%= current_user.email %></strong>
           <%= link_to('Logout', destroy_user_session_path, :method => :delete) %>
       <% end %>
    </div>
-  </div>
+
   </nav>
-  <p class="notice"><%= notice %></p>
-  <p class="alert"><%= alert %></p>
 
 
+  </div>
 <%= yield %>
 
 </body>
